@@ -7,30 +7,28 @@ on:
 
 jobs:
   preprocessing:
-
     runs-on: ubuntu-latest
 
     steps:
-
       - name: Checkout Repository
         uses: actions/checkout@v4
 
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.11'
+          python-version: "3.11"
 
       - name: Install Dependencies
         run: |
-          pip install -r requirements.txt
+          pip install pandas numpy scikit-learn
 
-      - name: Run Preprocessing
+      - name: Run Preprocessing Script
         run: |
-          cd preprocessing
+          cd Preprocessing
           python automate_Hana-Fithri-Sabiila.py
 
       - name: Upload Processed Dataset
         uses: actions/upload-artifact@v4
         with:
           name: processed-dataset
-          path: preprocessing/Employee-Attrition-Dataset_preprocessing/
+          path: Preprocessing/Employee-Attrition-Dataset_preprocessing/
