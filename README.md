@@ -2,7 +2,7 @@
 
 ---
 
-## Deskripsi Proyek
+# Deskripsi Proyek
 Proyek ini merupakan implementasi sistem machine learning untuk memprediksi kemungkinan seorang karyawan mengalami attrition (keluar dari perusahaan). Model dibangun menggunakan algoritma Random Forest Classifier dengan pendekatan supervised learning. Tujuan utama proyek ini adalah membantu perusahaan dalam menganalisis faktor-faktor yang memengaruhi tingkat attrition sehingga perusahaan dapat mengambil langkah preventif untuk meningkatkan retensi karyawan.
 
 # Dataset
